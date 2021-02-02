@@ -14,19 +14,26 @@
   <div class="container1">
     <div id="slide1" class="slide1">
       <div style="color:black;background-color:green;height:500px;">hello</div>
+      <div style="color:black;background-color:red;height:500px;">hello</div>
+
     </div>
   </div>
   <!--<div class="container2">
     <div id="slide2" class="slide slide2"></div>
   </div>-->
-  <div style="height:1000px">
-    <div style="height:500px;background-color:pink;"></div>
-  </div>
-  <div class="container-footer">
-    <footer>
-      <h1> THIS IS THE FOOTER</h1>
-    </footer>
-  </div>
+  <script>
+    jQuery(document).ready(function ($) { //wait for the document to load
+      $('body').each(function () { //loop through each element with the .dynamic-height class
+        /*$(this).css({
+          'height': $('#slide1').outerHeight() + 'px' //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
+        });*/
+        var cow = $('#slide1').outerHeight() + 'px';
+        var sheep = 1000 + 'px';
+        var pig = $(window).height() + 1000 + 'px';
+        $(this).css('height', pig);
+      });
+    });
+  </script>
 </body>
 
 

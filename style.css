@@ -4,7 +4,7 @@
 */
 
 body {
-  height: 340vh;
+  height:auto;
   /* 100vh x the number of slides + 40vh for the footer */
   margin: 0;
   color: #f3f6fb;
@@ -38,7 +38,6 @@ body {
 }
 
 .slide1 {
-  height:auto;
   width: 100vw;
   /* IMPORTANT: divs need a width if they're fixed or they won't be visible */
   position: fixed;
@@ -61,25 +60,6 @@ body {
   background-image: url(slide3.jpg);
   background-position: center;
   background-repeat: none;
-}
-
-.container-footer {
-  height: 340vh;
-  /* the footer container is the height of the body */
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-footer {
-  height: 40vh;
-  width: 100vw;
-  position: fixed;
-  /* the footer just needs to be fixed to the bottom of its container. it'll be visible when scrolling past the last slide */
-  bottom: 0;
-  right: 0;
-  background-color: black;
 }
 
 h1 {
