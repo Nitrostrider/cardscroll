@@ -41,28 +41,7 @@ body {
   width: 100vw;
   /* IMPORTANT: divs need a width if they're fixed or they won't be visible */
   position: fixed;
-  background-color:white;
   background-position: center;
   background-repeat: none;
 }
 
-.container2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 300vh;
-  z-index: 1;
-}
-
-.slide2 {
-  width: 100vw;
-  position: fixed;
-  background-image: url(slide3.jpg);
-  background-position: center;
-  background-repeat: none;
-}
-
-h1 {
-  text-align: center;
-  padding: 20vh;
-}
