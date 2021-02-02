@@ -3,7 +3,8 @@
   CHECK THE NOTES. It might be a little confusing but I try and explain as best as I can.
 */
 body{
-  	margin: 0;
+	height: 340vh; /* 100vh x the number of slides + 40vh for the footer */
+	margin: 0;
     color: #f3f6fb;
 }
 
