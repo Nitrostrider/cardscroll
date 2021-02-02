@@ -8,7 +8,7 @@
 
 <body>
   <div class="slide slide0">
-    <h1>it's a card deck! scroll to reveal the next slide.</h1>
+    <div style="background-color:blue;height:100%;">it's a card deck! scroll to reveal the next slide.</div>
   </div>
   <div class="container1">
     <div id="slide1" class="slide1">
@@ -35,7 +35,7 @@
           'height': $('#slide1').outerHeight() + 'px' //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
         });*/
         var cow = $('#slide1').outerHeight();
-        var pig = $(window).height() + cow + 'px';
+        var pig = $(".slide0").height() + cow + 'px';
         $(this).css('height', pig);
       });
     });
