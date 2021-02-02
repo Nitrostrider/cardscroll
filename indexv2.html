@@ -27,9 +27,8 @@
         /*$(this).css({
           'height': $('#slide1').outerHeight() + 'px' //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
         });*/
-        var cow = $('#slide1').outerHeight() + 'px';
-        var sheep = 1000 + 'px';
-        var pig = $(window).height() + 1000 + 'px';
+        var cow = $('#slide1').outerHeight();
+        var pig = $(window).height() + cow + 'px';
         $(this).css('height', pig);
       });
     });
