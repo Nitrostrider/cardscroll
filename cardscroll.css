@@ -4,7 +4,6 @@
 */
 body{
   	margin: 0;
-    color: #f3f6fb;
 }
 
 .slide{
@@ -13,9 +12,7 @@ body{
 
 /* style for the slides */
 .slide0{
-	background-image: url(slide1.jpg);
-    background-position: center;
-    background-repeat: none;
+	background-color:pink;
     
 	position: relative;
 	z-index: 3; /* set the z-index so they stack. The first slide doesn't have a container so it gets a z-index */
