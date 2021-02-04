@@ -1,22 +1,51 @@
 <html>
 
 <head>
-	<link rel="stylesheet" type="text/css" href="cardscroll.css">
-	<!--<script type="text/javascript" src="jquery-2.1.4.js"></script>-->
-
-	<script type="text/javascript" src="cardscroll.js"></script>
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="cardscrollv2.css">
+  <script type="text/javascript" src="jquery-2.1.4.js"></script>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 </head>
 
 <body>
-	<div class="slide slide0">
-		<h1>it's a card deck! scroll to reveal the next slide.</h1>
-	</div>
-	<div class="container1">
-    <div id="slide1" class="slide slide1"></div>
+  <div id="fakebody">
+  <div class="slide slide0">
+    <div style="background-color:blue;height:100%;">it's a card deck! scroll to reveal the next slide.</div>
   </div>
-	<div style="height:1000px; background-color:blue;"></div>
-	<div style="height:1000px; background-color:red;"></div>
+  <div class="container1">
+    <div id="slide1" class="slide1">
+      <div style="color:black;background-color:green;">hello</div>
+      <div style="color:black;background-color:green;">hello</div>
+      <div style="color:black;background-color:green;">hello</div>
+      <div style="color:black;background-color:green;">hello</div>
+      <div style="color:black;background-color:green;">hello</div>
+      <div style="color:black;background-color:green;">hello</div>
+      <div style="color:black;background-color:green;">hello</div>
+      <div style="color:black;background-color:green;">hello</div>
+      <div style="color:black;background-color:green;">hello</div>
+      <div style="color:black;background-color:green;">hello</div>
+      <div style="color:black;background-color:green;">hello</div>
+      <div style="color:black;background-color:red;height:1000px;">hello</div>
+
+    </div>
+  </div>
+  
+  </div>
+
+  <script>
+    jQuery(document).ready(function ($) { //wait for the document to load
+      $('body').each(function () { //loop through each element with the .dynamic-height class
+        /*$(this).css({
+          'height': $('#slide1').outerHeight() + 'px' //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
+        });*/
+        var cow = $('#slide1').outerHeight();
+        var pig = $(".slide0").height() + cow + 'px';
+        $(this).css('height', pig);
+      });
+    });
+  </script>
+  <script type="text/javascript" src="cardscroll.js"></script>
+
 </body>
+
 
 </html>

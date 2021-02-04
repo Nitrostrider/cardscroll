@@ -5,6 +5,11 @@
 
 body {
   height:auto;
+  margin: 0;
+  color: #f3f6fb;
+}
+#fakebody {
+  height:auto;
   /* 100vh x the number of slides + 40vh for the footer */
   margin: 0;
   color: #f3f6fb;
