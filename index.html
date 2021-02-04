@@ -7,8 +7,22 @@
 </head>
 
 <body>
-  <div class="slide slide0">
-    <div style="background-color:blue;height:100%;">it's a card deck! scroll to reveal the next slide.</div>
+  <div class="slide0">
+    <div style="background-color:blue;height:30px;">it's a card deck! scroll to reveal the next slide.</div>
+    <div style="background-color:blue;height:30px;">it's a card deck! scroll to reveal the next slide.</div>
+    <div style="background-color:blue;height:30px;">it's a card deck! scroll to reveal the next slide.</div>
+    <div style="background-color:blue;height:30px;">it's a card deck! scroll to reveal the next slide.</div>
+    <div style="background-color:blue;height:30px;">it's a card deck! scroll to reveal the next slide.</div>
+    <div style="background-color:blue;height:30px;">it's a card deck! scroll to reveal the next slide.</div>
+    <div style="background-color:blue;height:30px;">it's a card deck! scroll to reveal the next slide.</div>
+    <div style="background-color:blue;height:30px;">it's a card deck! scroll to reveal the next slide.</div>
+    <div style="background-color:blue;height:30px;">it's a card deck! scroll to reveal the next slide.</div>
+    <div style="background-color:blue;height:30px;">it's a card deck! scroll to reveal the next slide.</div>
+    <div style="background-color:blue;height:30px;">it's a card deck! scroll to reveal the next slide.</div>
+    <div style="background-color:blue;height:30px;">it's a card deck! scroll to reveal the next slide.</div>
+    <div style="background-color:blue;height:30px;">it's a card deck! scroll to reveal the next slide.</div>
+    <div style="background-color:blue;height:30px;">it's a card deck! scroll to reveal the next slide.</div>
+    <div style="background-color:blue;height:30px;">it's a card deck! scroll to reveal the next slide.</div>
   </div>
   <div class="container1">
     <div id="slide1" class="slide1">
@@ -34,9 +48,12 @@
         /*$(this).css({
           'height': $('#slide1').outerHeight() + 'px' //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
         });*/
-        var cow = $('#slide1').outerHeight();
-        var pig = $(".slide0").height() + cow + 'px';
-        $(this).css('height', pig);
+        var rock = $('#slide1').outerHeight();
+        var paper = $(".slide0").height();
+        var tripod = paper * 2 + "px";
+        var scissor = rock + paper + 'px';
+        $(this).css('height', scissor);
+        $('.container1').css('height', tripod);
       });
     });
   </script>
