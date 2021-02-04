@@ -9,7 +9,7 @@
 <body>
   <div id="fakebody">
   <div class="slide slide0">
-    <div style="background-color:blue;height:100%;">it's a card deck! scroll to reveal the next slide.</div>
+    <div style="background-color:blue;height:300px">it's a card deck! scroll to reveal the next slide.</div>
   </div>
   <div class="container1">
     <div id="slide1" class="slide1">
@@ -33,13 +33,15 @@
 
   <script>
     jQuery(document).ready(function ($) { //wait for the document to load
-      $('body').each(function () { //loop through each element with the .dynamic-height class
+      $('#fakebody').each(function () { //loop through each element with the .dynamic-height class
         /*$(this).css({
           'height': $('#slide1').outerHeight() + 'px' //adjust the css rule for margin-top to equal the element height - 10px and add the measurement unit "px" for valid CSS
         });*/
         var cow = $('#slide1').outerHeight();
         var pig = $(".slide0").height() + cow + 'px';
+        var water = pig + 1;
         $(this).css('height', pig);
+        $('body').css('height',water);
       });
     });
   </script>

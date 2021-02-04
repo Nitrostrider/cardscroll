@@ -34,4 +34,3 @@ var stopFixedScroll = function( slideNum ){
 };
 
 stopFixedScroll(1);
-stopFixedScroll(2);
